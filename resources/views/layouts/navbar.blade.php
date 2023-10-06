@@ -44,6 +44,33 @@
             </div>
         </li>
 
+        <!-- Lang Item - Alerts -->
+        <li class="nav-item dropdown no-arrow mx-1">
+            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe fa-fw"></i>
+                <!-- Counter - Alerts -->
+                {{-- <span class="badge badge-danger badge-counter">3+</span> --}}
+            </a>
+            <!-- Dropdown - Alerts -->
+            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="alertsDropdown">
+                <h6 class="dropdown-header">
+                    Choose Language
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="{{ route('LanguageConverter','ar') }}">
+                    <div>
+                        <span class="font-weight-bold">{{ __('words.Arabic') }}</span>
+                    </div>
+                </a>
+                <a class="dropdown-item d-flex align-items-center" href="{{ route('LanguageConverter','en') }}">
+                    <div>
+                        <span class="font-weight-bold">@lang('words.English')</span>
+                    </div>
+                </a>
+            </div>
+        </li>
+
         <!-- Nav Item - Alerts -->
         <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown"
