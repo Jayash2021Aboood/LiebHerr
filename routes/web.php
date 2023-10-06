@@ -46,3 +46,11 @@ Route::middleware('auth')->group(function () {
  
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
 });
+
+Route::get('LanguageConverter/{locale}', function($locale){
+    if(in_array($locale, ['ar','en'])){
+        session()->put('locale',$locale);
+    }
+
+    return redirect()->back();
+})->name('LanguageConverter');
