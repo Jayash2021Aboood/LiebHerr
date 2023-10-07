@@ -2,5 +2,7 @@
 return [
     'Welcome' => 'Welcome',
     'Arabic' => 'Arabic',
-    'English' => 'English',    
+    'English' => 'English',
+    'Home' => 'Home',
+    'About us' => 'About us',
 ];
