@@ -1,4 +1,4 @@
-@extends('layouts.admin.app')
+@extends('admin.layouts.app')
 
 @section('title', 'Edit Product')
 
@@ -17,18 +17,14 @@
             <label class="form-label">Price</label>
             <input type="text" name="price" class="form-control" placeholder="Price" value="{{ $product->price }}">
         </div>
+        <input type="text" name="product_code" class="form-control" placeholder="Product Code"
+            value="{{ $product->product_code }}">
     </div>
-    <div class="row">
-        <div class="col mb-3">
-            <label class="form-label">Product Code</label>
-            <input type="text" name="product_code" class="form-control" placeholder="Product Code"
-                value="{{ $product->product_code }}">
-        </div>
-        <div class="col mb-3">
-            <label class="form-label">Description</label>
-            <textarea class="form-control" name="description"
-                placeholder="Descriptoin">{{ $product->description }}</textarea>
-        </div>
+    <div class="col mb-3">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" name="description"
+            placeholder="Descriptoin">{{ $product->description }}</textarea>
+    </div>
     </div>
     <div class="row">
         <div class="d-grid">
