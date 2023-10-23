@@ -18,14 +18,20 @@
             <span>Dashboard</span></a>
     </li>
 
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a class="nav-link" href="{{ route('products') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Product</span></a>
+    </li> --}}
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('joborders.index') }}">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>@lang('words.joborders')</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="/profile">
+        <a class="nav-link" href="{{ url('/profile') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Profile</span></a>
     </li>
