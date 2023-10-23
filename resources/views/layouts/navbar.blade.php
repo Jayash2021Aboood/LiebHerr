@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-2">
                 <div class="logo-area">
-                    <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                    <a href="index.html"><img src="assets/images/logo11.png" width="200" height="33" alt="logo"></a>
                 </div>
             </div>
             <div class="col-lg-10">
@@ -14,10 +14,12 @@
                 </div>
                 <div class="main-menu">
                     <ul>
-                        <li class="active"><a href="/">@lang('words.Home')</a></li>
-                        <li><a href="about.html">@lang('words.About us')</a></li>
-                        <li><a href="job-category.html">@lang('category')</a></li>
-                        <li><a href="index.html#">blog</a>
+                        <li class="active"><a href="{{ url('/') }}">@lang('words.Home')</a></li>
+                        <li><a href="#applayForm">@lang('words.applay now')</a></li>
+                        {{-- <li><a href="job-category.html">@lang('words.category')</a></li> --}}
+                        <li><a href="#aboutUs">@lang('words.About us')</a></li>
+                        <li><a href="#gallery">@lang('words.gallery')</a></li>
+                        {{-- <li><a href="index.html#">blog</a>
                             <ul class="sub-menu">
                                 <li><a href="blog-home.html">Blog Home</a></li>
                                 <li><a href="blog-details.html">Blog Details</a></li>
@@ -31,11 +33,11 @@
                                 <li><a href="pricing-plan.html">Pricing Plan</a></li>
                                 <li><a href="elements.html">Elements</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                         @if(session()->get('locale') !== 'ar')
                         <li><a href="{{ route('LanguageConverter','ar') }}">@lang('words.Arabic')</a></li>
                         @endif
-                        @if(session()->get('locale') !== 'en')
+                        @if(session()->get('locale') !== 'en' && session()->get('locale') !== null)
                         <li><a href="{{ route('LanguageConverter','en') }}">@lang('words.English')</a></li>
                         @endif
                         <li class="menu-btn">

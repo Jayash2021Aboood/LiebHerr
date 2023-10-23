@@ -1,5 +1,5 @@
-<footer class="footer-area section-padding">
-    <div class="footer-widget">
+<footer class="footer-area section-padding section-padding-footer">
+    {{-- <div class="footer-widget">
         <div class="container">
             <div class="row">
                 <div class="col-xl-2 col-lg-3">
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="footer-copyright">
         <div class="container">
             <div class="row">
@@ -49,18 +49,18 @@
                     <span>
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="fa fa-heart-o"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </script> All rights reserved in Liebherr <i class="fa fa-heart-o"
+                            aria-hidden="true"></i> By <a href="https://wa.me/967770840891" target="_blank">JayashCode</a>
 
                     </span>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="social-icons">
                         <ul>
-                            <li><a href="index.html#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="index.html#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="index.html#"><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href="index.html#"><i class="fa fa-behance"></i></a></li>
+                            <li><a href="https://www.facebook.com/LiebherrKarriere"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/liebherr"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/user/liebherr"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/liebherr/"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>

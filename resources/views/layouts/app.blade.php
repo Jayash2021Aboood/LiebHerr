@@ -9,6 +9,17 @@
 
     <title>Comport</title>
 
+    <!-- Custom fonts for this template-->
+    <link href="{{ asset('admin_assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="{{ asset('admin_assets/css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+
+
     <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.png') }}" type="image/x-icon">
 
     <link rel="stylesheet" href="{{ asset('assets/css/animate-3.7.0.css') }}">
@@ -18,6 +29,40 @@
     <link rel="stylesheet" href="{{ asset('assets/css/owl-carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/nice-select.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
+    <style>
+        .nice-select {
+            float: none;
+            display: block;
+            width: 100%;
+            height: 40px;
+            padding: 0px 20px;
+        }
+
+        .form-control {
+            background-color: #f9f9ff !important;
+        }
+
+        .banner-area .banner-text {
+            padding: 0px 25% 0 5%;
+        }
+
+        .section-padding {
+            padding: 140px 0 100px;
+        }
+
+        .rtl {
+            @php
+                $local = str_replace('_', '-', app()->getLocale());
+                if($local === 'ar') echo 'direction: rtl;';
+                else echo 'direction: ltr;';
+            @endphp
+        }
+
+        .section-padding-footer{
+            padding: 20px 0px;
+        }
+    </style>
 </head>
 
 <body>
