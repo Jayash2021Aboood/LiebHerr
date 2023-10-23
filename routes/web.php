@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\JobOrderController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
@@ -18,6 +19,8 @@ use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::post('sendData', [App\Http\Controllers\User\JobOrderController::class,'store'])->name('userSendData');
  
 Route::controller(AuthController::class)->group(function () {
     Route::get('register', 'register')->name('register');
@@ -45,6 +48,8 @@ Route::middleware('auth')->group(function () {
     });
  
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
+
+    Route::resource('joborders', JobOrderController::class);
 });
 
 Route::get('LanguageConverter/{locale}', function($locale){
