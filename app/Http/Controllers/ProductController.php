@@ -14,7 +14,7 @@ class ProductController extends Controller
     {
         $product = Product::orderBy('created_at', 'DESC')->get();
   
-        return view('products.index', compact('product'));
+        return view('admin.products.index', compact('product'));
     }
   
     /**
@@ -22,7 +22,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        return view('admin.products.create');
     }
   
     /**
@@ -42,7 +42,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
   
-        return view('products.show', compact('product'));
+        return view('admin.products.show', compact('product'));
     }
   
     /**
@@ -52,7 +52,7 @@ class ProductController extends Controller
     {
         $product = Product::findOrFail($id);
   
-        return view('products.edit', compact('product'));
+        return view('admin.products.edit', compact('product'));
     }
   
     /**
@@ -76,6 +76,6 @@ class ProductController extends Controller
   
         $product->delete();
   
-        return redirect()->route('products')->with('success', 'product deleted successfully');
+        return redirect()->route('admin.products')->with('success', 'product deleted successfully');
     }
 }
